@@ -1,0 +1,15 @@
+<div class="container flashes">
+  <% if flash %>
+    <% flash.each do |flash_type, text| %>
+      <% if flash_type == 'notice'%>
+        <div class='alert alert-success' role='alert'>
+          <%= text %>
+        </div>
+      <% else %>
+        <div class="alert alert-danger" role="alert">
+          <%= text %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
