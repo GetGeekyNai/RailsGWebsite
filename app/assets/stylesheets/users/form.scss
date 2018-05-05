@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Karma');
+@import 'global/variables';
+
+
+/*
+* @TODO - to be refactored proportionally with the growth of the app
+* Divide this file into the following sub-files:
+* 1. form-inputs - to contain input stylesheets
+* 2. form-buttons - style buttons - this can be used across the app
+*
+*/
+.user-form {
+  margin: 0 auto;
+  width: 500px;
+
+  // form headers
+  .form-header {
+    color: black;
+    text-align: center;
+  }
+
+  // inputs
+  .form-control {
+    color: $form_inputs;
+
+    &:active, &:focus {
+      border: 1px solid $form_inputs;
+    }
+  }
+
+  // buttons
+  .btn {
+    font-family: 'Karma', serif;
+    background-color: $form_buttons;
+    color: white;
+    border: none;
+    width: 25%;
+    -webkit-box-shadow:0 2px 0 $form_buttons;
+      -moz-box-shadow: 0 2px 0 $form_buttons;
+      box-shadow: 0 2px 0 $form_buttons;
+
+    &:hover {
+      background-color: $form_buttons;
+      color: white;
+      transition: none !important;
+    }
+  }
+}
