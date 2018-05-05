@@ -21,7 +21,7 @@
 
   // inputs
   .form-control {
-    color: $form_inputs;
+    color: black;
 
     &:active, &:focus {
       border: 1px solid $form_inputs;
@@ -34,14 +34,12 @@
     background-color: $form_buttons;
     color: white;
     border: none;
-    width: 25%;
-    -webkit-box-shadow:0 2px 0 $form_buttons;
-      -moz-box-shadow: 0 2px 0 $form_buttons;
-      box-shadow: 0 2px 0 $form_buttons;
+    width: 30%;
 
     &:hover {
-      background-color: $form_buttons;
-      color: white;
+      background-color: white;
+      color: $form_buttons;
+      border: 1px solid $form_buttons;
       transition: none !important;
     }
   }

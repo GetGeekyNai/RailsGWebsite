@@ -1,7 +1,7 @@
 <%= form_for @user do |u| %>
   <div class='form-group'>
     <%= u.label :name %>
-    <%= u.text_field :name, placeholder: 'first last', class: 'form-control' %>
+    <%= u.text_field :name, placeholder: 'First Last', class: 'form-control' %>
   </div>
   <div class='form-group'>
     <%= u.label :email %>
@@ -9,7 +9,7 @@
   </div>
   <div class='form-group'>
     <%= u.label :phone_number %>
-    <%= u.number_field :phone_number, placeholder: '0717000121', class: 'form-control' %>
+    <%= u.number_field :phone_number, placeholder: '0717000121', value:'0717000121', class: 'form-control' %>
   </div>
   <div class='form-group'>
     <%= u.label :password %>
