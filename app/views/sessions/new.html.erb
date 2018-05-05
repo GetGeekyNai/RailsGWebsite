@@ -1,0 +1,23 @@
+<div class='container'>
+  <div class='user-form'>
+    <h3 class='form-header'>Login</h3>
+    <hr>
+    <br>
+    <%= form_for @login_form, url: login_path, method: :post do |f| %>
+      <%= render partial: 'partials/form_errors',
+          locals: { errors: @login_form.errors.full_messages } if @login_form.errors.any? %>
+      <div class='form-group'>
+        <%= f.label :email %>
+        <%= f.text_field :email, class: 'form-control' %>
+      </div>
+      <div class='form-group'>
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control' %>
+      </div>
+      <div class='form-group'>
+        <%= f.submit 'Login', class: 'btn btn-primary' %>
+        <spn>
+      </div>
+    <% end %>
+  </div>
+</div>
