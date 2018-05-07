@@ -1,0 +1,12 @@
+<div class='container'>
+  <div class='user-form'>
+    <h3 class='form-header'>Sign Up</h3>
+    <hr>
+    <br>
+    <%= form_for @user, url: { action: :create } do |f| %>
+      <%= render partial: 'partials/form_errors',
+          locals: { errors: @user.errors.full_messages } if @user.errors.any? %>
+      <%= render partial: 'form', locals: { f:f, save_prompt: 'Create user' }%>
+    <% end %>
+  </div>
+</div>

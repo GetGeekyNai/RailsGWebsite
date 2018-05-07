@@ -1,0 +1,10 @@
+<div class='container user-form'>
+  <div class="alert alert-danger">
+    <h4><%= pluralize(errors.count, "Error" ) %></h4>
+    <ul>
+      <% errors.each do |err| %>
+        <li><%= err %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
